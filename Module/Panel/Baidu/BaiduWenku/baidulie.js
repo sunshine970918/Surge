@@ -1,8 +1,7 @@
 
 [rewrite_local]
 # 百度文库☆解锁VIP文档阅读权限（2022-10-17）
-^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/baidulibrary.js
-
+^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://raw.githubusercontent.com/sunshine970918/Surge/main/Module/Panel/Baidu/BaiduWenku/baidulie.js
 [mitm]
 hostname=appwk.baidu.com
 ***********************************/
