@@ -1,9 +1,9 @@
 // 酷安 replyList
-#if (/^https?:\/\/api.coolapk.com\/v6\/feed\/replyList/.test(url)) {
+/if (/^https?:\/\/api.coolapk.com\/v6\/feed\/replyList/.test(url)) {
   let obj = JSON.parse(body);
   obj.data = Object.values(obj.data).filter((item) => item.id);
   body = JSON.stringify(obj);
-#}
+}/
 
 // 酷安 index
 if (/^https?:\/\/api.coolapk.com\/v6\/main\/indexV8/.test(url)) {
