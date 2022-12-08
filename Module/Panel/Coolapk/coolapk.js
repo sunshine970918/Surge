@@ -21,15 +21,15 @@ if (/^https?:\/\/api.coolapk.com\/v6\/main\/indexV8/.test(url)) {
   body = JSON.stringify(obj);
 }
 
-// 酷安 dataList
-//if (/^https?:\/\/api.coolapk.com\/v6\/main\/dataList/.test(url)) {
-//  let obj = JSON.parse(body);
-//  obj.data = Object.values(obj.data).filter(
-//    (item) =>
-//      !(item["entityTemplate"] == "sponsorCard" || item.title == "精选配件")
-//  );
-//  body = JSON.stringify(obj);
-//}
+ 酷安 dataList
+if (/^https?:\/\/api.coolapk.com\/v6\/main\/dataList/.test(url)) {
+  let obj = JSON.parse(body);
+  obj.data = Object.values(obj.data).filter(
+    (item) =>
+      !(item["entityTemplate"] == "sponsorCard" || item.title == "精选配件")
+  );
+  body = JSON.stringify(obj);
+}
 
  酷安 detail
 if (/^https?:\/\/api.coolapk.com\/v6\/feed\/detail/.test(url)) {
