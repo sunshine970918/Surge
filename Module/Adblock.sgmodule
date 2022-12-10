@@ -101,10 +101,6 @@
 
 # 12306 开屏广告 //ad.12306.cn
 myBlockAds = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
-# 广告联盟 //api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
-adsense = type=http-response,pattern=^https?:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js
-# 京东 //api.m.jd.com
-myBlockAds = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 # 美团外卖 //wmapi.meituan.com, www.meituan.com
 myBlockAds = type=http-response,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v7\/loadInfo\?ad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
 
@@ -147,10 +143,10 @@ myBlockAds = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api
 ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/\w{32}\.(gif|jpg|png)$ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https?:\/\/render-oss-cdn\.amap\.com\/render\/studio-dev\/image\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
-# 京东极速版 //api.m.jd.com,*.360buyimg.com
+# 京东极速版 //api.m.jd.com, img11.360buyimg.com
 ^https:\/\/img11\.360buyimg\.com\/dl\/jfs\/t1\/195304\/29\/12317\/268480\/60e6fd21E02a8fb2a\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
-# > 京喜 //api.m.jd.com,*.360buyimg.com
+# > 京喜 //api.m.jd.com, img14.360buyimg.com
 ^https:\/\/img14.360buyimg.com\/mcoss\/jfs\/t1\/183719\/8\/13358\/190450\/60e82bedE10b64e23\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # 酷安
 ^https?:\/\/api\.coolapk\.com\/v\d\/search\?.*type=hotSearch data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
@@ -180,4 +176,4 @@ myBlockAds = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api
 
 [MITM]
 
-hostname = %APPEND% ad.12306.cn, vip7.fzwdyy.cn:8083, vpic.cms.qq.com, *.58cdn.com.cn, app.58.com, pic?.ajkimg.com, acs.m.taobao.com, heic.alicdn.com, pan.baidu.com, *.bdstatic.com, app-gw.csdn.net, api.douban.com, sdk.alibaba.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, *.pglstatp-toutiao.com.*, gurd.snssdk.com.*, *.pstatp.com.*, gd.10086.cn, *.amap.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, api.m.jd.com, *.360buyimg.com, gab.122.gov.cn, res.kfc.com.cn, api.coolapk.com, api-access.pangolin-sdk-toutiao.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net, wmapi.meituan.com, www.meituan.com, api.pinduoduo.com, api.yangkeduo.com, mpcs.suning.com, image.suning.cn, luckman.suning.com, business-cdn.shouji.sogou.com, 4gimg.map.qq.com, y.gtimg.cn, us.l.qq.com, c.tieba.baidu.com, tiebac.baidu.com, ad.12306.cn, interface.music.163.com, api.xiachufang.com, edith.xiaohongshu.com, *.ott.cibntv.net, lientaccess.10086.cn, wap.js.10086.cn, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, cloud.189.cn, zt-app.go189.cn
+hostname = %APPEND% ad.12306.cn, vip7.fzwdyy.cn:8083, vpic.cms.qq.com, *.58cdn.com.cn, app.58.com, pic?.ajkimg.com, acs.m.taobao.com, heic.alicdn.com, pan.baidu.com, *.bdstatic.com, app-gw.csdn.net, api.douban.com, sdk.alibaba.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, *.pglstatp-toutiao.com.*, gurd.snssdk.com.*, *.pstatp.com.*, gd.10086.cn, *.amap.com, api.m.jd.com, img11.360buyimg.com, img14.360buyimg.com, gab.122.gov.cn, res.kfc.com.cn, api.coolapk.com, api-access.pangolin-sdk-toutiao.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net, wmapi.meituan.com, www.meituan.com, api.pinduoduo.com, api.yangkeduo.com, mpcs.suning.com, image.suning.cn, luckman.suning.com, business-cdn.shouji.sogou.com, 4gimg.map.qq.com, y.gtimg.cn, us.l.qq.com, c.tieba.baidu.com, tiebac.baidu.com, ad.12306.cn, interface.music.163.com, api.xiachufang.com, edith.xiaohongshu.com, *.ott.cibntv.net, lientaccess.10086.cn, wap.js.10086.cn, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, cloud.189.cn, zt-app.go189.cn
