@@ -2,3 +2,182 @@
 #!desc=自用去广告
 #!author=大帅哥
 
+[URL Rewrite]
+
+# 58同城 //*.58cdn.com.cn, app.58.com, pic?.ajkimg.com
+^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/ - reject
+^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv - reject
+^https?:\/\/app\.58\.com\/api\/log\/ - reject
+^https?:\/\/pic\d\.ajkimg\.com\/mat\/\w+\?imageMogr\d\/format\/jpg\/thumbnail\/\d{3}x\d{4}$ - reject
+^https?:\/\/.+\.58cdn\.com\.cn\/brandads\/ - reject
+# 阿里巴巴 //acs.m.taobao.com, heic.alicdn.com
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ - reject
+# 百度地图
+^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.(jpg|mp4) - reject
+^https?:\/\/tb1.bdstatic.com\/tb\/cms\/ngmis\/adsense\/*.jpg - reject
+# CSDN //app-gw.csdn.net
+^https?:\/\/app-gw\.csdn\.net\/cms-app\/v\d\/home_page\/open_advertisement - reject
+# 豆瓣 //api.douban.com
+^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash.* - reject
+^https?:\/\/api\.douban\.com\b.*\/common_ads\?.* - reject
+# 饿了么 //elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com
+^https?:\/\/elemecdn.com\/.+\/sitemap - reject
+^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} - reject
+^https?:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} - reject
+^https?:\/\/fuss10.elemecdn.com\/.+.mp4 - reject
+^https?:\/\/www1.elecfans.com\/www\/delivery\/ - reject
+
+# 番茄小说去章末广告
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-app-package\/.+ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/web\.business\.image\/.+ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/package\.json - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/fallback\.js - reject
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package - reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/ad-pattern\/renderer\/package\.json - reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/img-cut-tos\/.+ - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/.+ - reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 - reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ - reject
+^http:\/\/.+\.byteimg\.com\/ad-app-package - reject
+# 京东
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts - reject
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin|base)\/(new)?na\/m\/(getLoadingPicture|adInfo) - reject
+# 交管12123 //gab.122.gov.cn
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
+# 肯德基 //res.kfc.com.cn
+^https?:\/\/res\.kfc\.com\.cn\/advertisement\/ - reject
+# 酷安 //api.coolapk.com, api-access.pangolin-sdk-toutiao.com
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk - reject
+# 美团 //img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net
+^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
+^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg - reject
+^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp - reject
+# 美团外卖
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - reject
+^https?:\/\/www\.meituan\.com\/api\/v2\/appstatus\?ad - reject
+# 拼多多 //api.pinduoduo.com, api.yangkeduo.com
+^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
+# > 苏宁 //mpcs.suning.com, image.suning.cn
+^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo - reject
+# 腾讯地图
+^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
+# > 腾讯QQ音乐 //y.gtimg.cn, us.l.qq.com
+^https:\/\/us\.l\.qq\.com\/exapp - reject
+^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
+^https?:\/\/.+?\/music\/common\/upload\/t_splash_info\/ - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
+# 铁路12306开屏广告 //ad.12306.cn
+^https?:\/\/ad\.12306\.cn\?.* - reject
+# 网易云音乐屏蔽热搜 //interface.music.163.com
+^https?:\/\/interface\.music\.163.com\/eapi\/(ad\/.*|search\/(default\/keyword\/list|specialkeyword/get)\?) - reject
+# > 下厨房 //api.xiachufang.com
+^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ - reject
+# 闲鱼 //gw.alicdn.com, acs.m.taobao.com
+^https:\/\/gw\.alicdn\.com\/mt\/ - reject
+^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
+^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} - reject
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ - reject
+# 优酷 //*.ott.cibntv.net
+^https?:\/\/[\w-.]+\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
+# 中国移动 //clientaccess.10086.cn, wap.js.10086.cn
+^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
+^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
+# > 中国电信 //cloud.189.cn, zt-app.go189.cn
+^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
+
+[Script]
+
+# 12306 开屏广告 //ad.12306.cn
+myBlockAds = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+# 广告联盟 //api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
+adsense = type=http-response,pattern=^https?:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adsense.js
+# 京东 //api.m.jd.com
+myBlockAds = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+# 美团外卖 //wmapi.meituan.com, www.meituan.com
+myBlockAds = type=http-response,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v7\/loadInfo\?ad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+
+# 贴吧去广告
+# 搭配分流: IP-CIDR, 180.76.76.200/32, REJECT
+tiebaJson = type=http-response,pattern=^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
+tiebaProto = type=http-response,pattern=^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd,requires-body=1,max-size=0,binary-body-mode=1,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
+# 小红书去广告
+## 去除开屏广告,去除瀑布流推荐
+myBlockAds = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v1\/system_service\/config\?|v2\/system_service\/splash_config$|v6\/homefeed\/categories\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js
+
+[Map Local]
+
+# > 555影视 //vip7.fzwdyy.cn:8083, vpic.cms.qq.com
+^https?:\/\/vip7\.fzwdyy\.cn:8083\/api\/(getAdvertInfo|getGOOGAdvert) data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/vpic\.cms\.qq\.com\/nj_vpic\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 阿里巴巴
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/heic\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q90\.jpg_\.heic$ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 百度云 //pan.baidu.com
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adx\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/update\.pan\.baidu\.com\/statistics\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 百度地图
+^https:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 大众点评 //img.meituan.net
+^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 大师兄 //sdk.alibaba.com
+^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/advert\?position=[^2]+ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^http?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/top_notice\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 广东移动 //gd.10086.cn
+^https?:\/\/gd\.10086\.cn\/gmccfile\/file\/image\/preloading703\/pre202[0-9]{20}\.jpg data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 高德地图 //*.amap.com
+^https?:\/\/amap-aos-info-nogw\.amap\.com\/ws\/aos\/alimama\/splash_screen_rt\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/\w{32}\.(gif|jpg|png)$ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/render-oss-cdn\.amap\.com\/render\/studio-dev\/image\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 京东极速版 //api.m.jd.com,*.360buyimg.com
+^https:\/\/img11\.360buyimg\.com\/dl\/jfs\/t1\/195304\/29\/12317\/268480\/60e6fd21E02a8fb2a\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 京喜 //api.m.jd.com,*.360buyimg.com
+^https:\/\/img14.360buyimg.com\/mcoss\/jfs\/t1\/183719\/8\/13358\/190450\/60e82bedE10b64e23\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 酷安
+^https?:\/\/api\.coolapk\.com\/v\d\/search\?.*type=hotSearch data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?+:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 苏宁 新人专享弹窗 //luckman.suning.com
+^https?:\/\/luckman\.suning\.com\/luck-web\/policy\/v\d\/msf\/index\.do data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 搜狗输入法 //business-cdn.shouji.sogou.com
+^https?+:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 腾讯地图 //4gimg.map.qq.com
+^https?+:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 腾讯qq音乐
+^https?:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad/.*?\d{4}\.jpg data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/targeted_ads data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 小红书
+## 去除惊喜弹窗
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(open|get_style)\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# > 中国联通 //m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/getclientconfig\.htm data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(\/|\.js) data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/m1\.ad\.10010\.com\/noticeMag\/images\/imageUpload\/2\d{3} data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https?:\/\/res\.mall\.10010\.cn\/mall\/common\/js\/fa\.js?referer= data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 中国电信
+^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+
+[MITM]
+
+hostname = %APPEND% ad.12306.cn, vip7.fzwdyy.cn:8083, vpic.cms.qq.com, *.58cdn.com.cn, app.58.com, pic?.ajkimg.com, acs.m.taobao.com, heic.alicdn.com, pan.baidu.com, *.bdstatic.com, app-gw.csdn.net, api.douban.com, sdk.alibaba.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, *.pglstatp-toutiao.com.*, gurd.snssdk.com.*, *.pstatp.com.*, gd.10086.cn, *.amap.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, api.m.jd.com, *.360buyimg.com, gab.122.gov.cn, res.kfc.com.cn, api.coolapk.com, api-access.pangolin-sdk-toutiao.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net, wmapi.meituan.com, www.meituan.com, api.pinduoduo.com, api.yangkeduo.com, mpcs.suning.com, image.suning.cn, luckman.suning.com, business-cdn.shouji.sogou.com, 4gimg.map.qq.com, y.gtimg.cn, us.l.qq.com, c.tieba.baidu.com, tiebac.baidu.com, ad.12306.cn, interface.music.163.com, api.xiachufang.com, edith.xiaohongshu.com, *.ott.cibntv.net, lientaccess.10086.cn, wap.js.10086.cn, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, cloud.189.cn, zt-app.go189.cn
