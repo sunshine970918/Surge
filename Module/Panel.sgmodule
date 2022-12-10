@@ -28,22 +28,3 @@ NET_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 
 #节假日信息
 Timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
-
-#酷安去广告
-#去首页广告、信息流广告、评论广告
-coolapk = type=http-response,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sunshine970918/Surge/main/Module/Panel/Coolapk/coolapk.js
-
-#Picsew滚动截图+解锁订阅
-Picsew滚动截图+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
-
-#荒野日记—孤岛+无限贝壳
-荒野日记—孤岛+无限贝壳 = type=http-response,pattern=http:\/\/server1\.xxxy\.dayukeji\.com:15009\/Logic\/user\/querymail1,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hyrz.js
-
-#京东淘宝比价
-京东比价 = type=http-response,requires-body=1,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
-
-淘宝比价 = type=http-request,requires-body=1,pattern=^http:\/\/.+\/amdc\/mobileDispatch,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/tb_price.js
-淘宝比价 = type=http-response,requires-body=1,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/tb_price.js
-
-[MITM]
-hostname= %APPEND% api.coolapk.com, buy.itunes.apple.com, server1.xxxy.dayukeji.com, api.m.jd.com, trade-acs.m.taobao.com
