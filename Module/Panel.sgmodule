@@ -11,6 +11,9 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #网络详情
 NET_info = script-name=NET_info,update-interval=1
 
+#流媒体检测
+stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=3600
+
 #节假日信息
 Timecard = script-name=Timecard,update-interval=3600
 
@@ -25,6 +28,9 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 #网络详情 标题显示为根节点名
 #应当修改的字段 group 代理策略组名称
 NET_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/net_info.js,argument=icon=externaldrive.connected.to.line.below&color=#9a7ff7&group=Proxy
+
+#流媒体检测
+stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Stream-All/Moore/Stream-All.js
 
 #节假日信息
 Timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
