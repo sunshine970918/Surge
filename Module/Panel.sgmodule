@@ -14,12 +14,6 @@ NET_info = script-name=NET_info,update-interval=1
 #节假日信息
 Timecard = script-name=Timecard,update-interval=3600
 
-#酷安去广告
-coolapk = script-name=coolapk, update-interval=1
-
-#策略组面板 可重复配置 注意修改相应字段
-groupPanel= script-name=groupPanel,update-interval=5
-
 
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
