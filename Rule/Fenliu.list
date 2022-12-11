@@ -69,14 +69,14 @@ DOMAIN,pageviewp.icbc.com.cn
 
 #=======H=======#
 #>哈啰
-#DOMAIN-KEYWORD,assets.51downapp.cn
+DOMAIN-KEYWORD,assets.51downapp.cn
 #####https://www.tvn.cc/韩剧TV
 DOMAIN-SUFFIX,qw2v.changshuohr.net
 DOMAIN-SUFFIX,wss.haoyundmn.com
 
 #=======K=======#
 #>酷安
-#>DOMAIN-KEYWORD,p6-be-pack-sign.pglstatp-toutiao.com
+>DOMAIN-KEYWORD,p6-be-pack-sign.pglstatp-toutiao.com
 #>酷我音乐
 DOMAIN-SUFFIX,c.kuwo.cn
 DOMAIN-SUFFIX,deliver.kuwo.cn
@@ -93,10 +93,10 @@ DOMAIN-SUFFIX,rich.kuwo.cn
 
 #=======N=======#
 #####nfmovies.com奈菲影视
-#DOMAIN-KEYWORD,brushshopy
-#DOMAIN-KEYWORD,onenews
+DOMAIN-KEYWORD,brushshopy
+DOMAIN-KEYWORD,onenews
 DOMAIN-SUFFIX,s96.cnzz.com
-#DOMAIN-SUFFIX,yabo729.com
+DOMAIN-SUFFIX,yabo729.com
 
 #=======M=======#
 #>美团
@@ -145,8 +145,8 @@ DOMAIN-SUFFIX,api.poll.video.qq.com
 DOMAIN-SUFFIX,static-res.qq.com
 DOMAIN-SUFFIX,stat.tpns.tencent.com
 DOMAIN,h.trace.qq.com
-#DOMAIN-KEYWORD,omgmta.qq.com
-#DOMAIN-KEYWORD,omgmta1.qq.com
+DOMAIN-KEYWORD,omgmta.qq.com
+DOMAIN-KEYWORD,omgmta1.qq.com
 
 #=======X=======#
 #迅雷解除版权限制
@@ -170,7 +170,7 @@ DOMAIN,switch.cup.com.cn
 
 #=======W=======#
 #>网易云
-#DOMAIN-KEYWORD,ossgw.alicdn.com
+DOMAIN-KEYWORD,ossgw.alicdn.com
 #>微博
 #DOMAIN-KEYWORD,fastimage.uve.weibo.com
 #DOMAIN-KEYWORD,adimg.uve.weibo.com
@@ -240,14 +240,14 @@ DOMAIN-KEYWORD,dlads
 DOMAIN,dagonghuzhu.com
 DOMAIN-KEYWORD,xxshuyuan
 DOMAIN-KEYWORD,haowanyou
-#DOMAIN-KEYWORD,dat8
-#DOMAIN-KEYWORD,112wan
-#DOMAIN-KEYWORD,dfkj8
-#DOMAIN-KEYWORD,mifengv
-#DOMAIN-KEYWORD,lieyou
-#DOMAIN-KEYWORD,789htbet
-#DOMAIN-KEYWORD,mdapp09
-#DOMAIN-KEYWORD,juruigj
+DOMAIN-KEYWORD,dat8
+DOMAIN-KEYWORD,112wan
+DOMAIN-KEYWORD,dfkj8
+DOMAIN-KEYWORD,mifengv
+DOMAIN-KEYWORD,lieyou
+DOMAIN-KEYWORD,789htbet
+DOMAIN-KEYWORD,mdapp09
+DOMAIN-KEYWORD,juruigj
 #>中国联通
 DOMAIN-SUFFIX,m1.ad.10010.com
 #>中国电信
