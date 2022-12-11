@@ -236,10 +236,10 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 #>真不卡
 DOMAIN-SUFFIX,ttayy.cn
 DOMAIN-SUFFIX,zhengxiaoliu.top
-#DOMAIN-KEYWORD,dlads
+DOMAIN-KEYWORD,dlads
 DOMAIN,dagonghuzhu.com
-#DOMAIN-KEYWORD,xxshuyuan
-#DOMAIN-KEYWORD,haowanyou
+DOMAIN-KEYWORD,xxshuyuan
+DOMAIN-KEYWORD,haowanyou
 #DOMAIN-KEYWORD,dat8
 #DOMAIN-KEYWORD,112wan
 #DOMAIN-KEYWORD,dfkj8
