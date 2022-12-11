@@ -96,7 +96,7 @@ DOMAIN-SUFFIX,rich.kuwo.cn
 #DOMAIN-KEYWORD,brushshopy
 #DOMAIN-KEYWORD,onenews
 DOMAIN-SUFFIX,s96.cnzz.com
-;DOMAIN-SUFFIX,yabo729.com
+#DOMAIN-SUFFIX,yabo729.com
 
 #=======M=======#
 #>美团
@@ -150,9 +150,9 @@ DOMAIN,h.trace.qq.com
 
 #=======X=======#
 #迅雷解除版权限制
-;DOMAIN,hub5btmain.v6.shub.sandai.net
-;DOMAIN,hub5emu.v6.shub.sandai.net
-;DOMAIN,hub5idx.v6.shub.sandai.net
+#DOMAIN,hub5btmain.v6.shub.sandai.net
+#DOMAIN,hub5emu.v6.shub.sandai.net
+#DOMAIN,hub5idx.v6.shub.sandai.net
 #>小红书
 DOMAIN,ads-img-qc.xhscdn.com
 DOMAIN,ads-video-al.xhscdn.com
