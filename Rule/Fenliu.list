@@ -24,7 +24,7 @@ IP-CIDR,203.107.63.154/32,no-resolve
 #=======B=======#
 #>哔哩哔哩
 DOMAIN-SUFFIX,cm.bilibili.com
-DOMAIN-SUFFIX,api.sobot.com
+DOMAIN-KEYWORD,api.sobot.com
 DOMAIN-SUFFIX,cm.ad.bilibili.com
 DOMAIN-SUFFIX,cm.adcommon.bilibili.com
 DOMAIN-SUFFIX,cm.game.bilibili.com
@@ -41,7 +41,7 @@ DOMAIN,images.ctfassets.net
 
 #=======D=======#
 #>叮嗒出行
-DOMAIN-SUFFIX,image.bianxianmao.com
+DOMAIN-KEYWORD,image.bianxianmao.com
 IP-CIDR,203.107.1.1/24,no-resolve
 
 #=======G=======#
