@@ -76,7 +76,7 @@ DOMAIN-SUFFIX,wss.haoyundmn.com
 
 #=======K=======#
 #>酷安
->DOMAIN-KEYWORD,p6-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-KEYWORD,p6-be-pack-sign.pglstatp-toutiao.com
 #>酷我音乐
 DOMAIN-SUFFIX,c.kuwo.cn
 DOMAIN-SUFFIX,deliver.kuwo.cn
@@ -99,7 +99,7 @@ DOMAIN-SUFFIX,s96.cnzz.com
 DOMAIN-SUFFIX,yabo729.com
 
 #=======M=======#
-#>美团
+#美团
 DOMAIN,flowplus.meituan.net
 DOMAIN-SUFFIX,analytics.meituan.net
 DOMAIN-SUFFIX,meituan.xn--io0a7i
