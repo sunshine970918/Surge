@@ -41,7 +41,7 @@ DOMAIN,images.ctfassets.net
 
 #=======D=======#
 #>叮嗒出行
-DOMAIN-SUFFIX,image.bianxianmao.com
+DOMAIN-KEYWORD,image.bianxianmao.com
 IP-CIDR,203.107.1.1/24,no-resolve
 
 #=======G=======#
