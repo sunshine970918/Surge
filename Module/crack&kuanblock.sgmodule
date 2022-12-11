@@ -16,8 +16,8 @@ Picsew滚动截图+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itu
 #历史价格
 京东比价 = type=http-response,requires-body=1,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
 
-淘宝比价 = type=http-request,requires-body=1,pattern=^http:\/\/.+\/amdc\/mobileDispatch,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/tb_price.js
-淘宝比价 = type=http-response,requires-body=1,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/tb_price.js
+#淘宝比价 = type=http-request,requires-body=1,pattern=^http:\/\/.+\/amdc\/mobileDispatch,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/tb_price.js
+#淘宝比价 = type=http-response,requires-body=1,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/tb_price.js
 
 #百度云解锁svip和播放页面倍速
 百度云加速=type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,script-path=https://raw.githubusercontent.com/sunshine970918/Surge/main/Module/Panel/Baidu/Baidiyun/baidiCloud.js
@@ -26,4 +26,4 @@ Picsew滚动截图+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itu
 百度文库解锁VIP = type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sunshine970918/Surge/main/Module/Panel/Baidu/BaiduWenku/baidulie.js
 
 [MITM]
-hostname = %APPEND% api.coolapk.com, buy.itunes.apple.com, server1.xxxy.dayukeji.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, appwk.baidu.com
+hostname = %APPEND% api.coolapk.com, buy.itunes.apple.com, server1.xxxy.dayukeji.com, api.m.jd.com, -trade-acs.m.taobao.com, pan.baidu.com, appwk.baidu.com
