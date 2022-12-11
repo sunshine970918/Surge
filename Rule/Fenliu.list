@@ -24,7 +24,7 @@ IP-CIDR,203.107.63.154/32,no-resolve
 #=======B=======#
 #>哔哩哔哩
 DOMAIN-SUFFIX,cm.bilibili.com
-DOMAIN-KEYWORD,api.sobot.com
+DOMAIN-SUFFIX,api.sobot.com
 DOMAIN-SUFFIX,cm.ad.bilibili.com
 DOMAIN-SUFFIX,cm.adcommon.bilibili.com
 DOMAIN-SUFFIX,cm.game.bilibili.com
@@ -41,7 +41,7 @@ DOMAIN,images.ctfassets.net
 
 #=======D=======#
 #>叮嗒出行
-DOMAIN-KEYWORD,image.bianxianmao.com
+DOMAIN-SUFFIX,image.bianxianmao.com
 IP-CIDR,203.107.1.1/24,no-resolve
 
 #=======G=======#
@@ -69,14 +69,14 @@ DOMAIN,pageviewp.icbc.com.cn
 
 #=======H=======#
 #>哈啰
-DOMAIN-KEYWORD,assets.51downapp.cn
+DOMAIN-SUFFIX,assets.51downapp.cn
 #####https://www.tvn.cc/韩剧TV
 DOMAIN-SUFFIX,qw2v.changshuohr.net
 DOMAIN-SUFFIX,wss.haoyundmn.com
 
 #=======K=======#
 #>酷安
-DOMAIN-KEYWORD,p6-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com
 #>酷我音乐
 DOMAIN-SUFFIX,c.kuwo.cn
 DOMAIN-SUFFIX,deliver.kuwo.cn
@@ -145,8 +145,8 @@ DOMAIN-SUFFIX,api.poll.video.qq.com
 DOMAIN-SUFFIX,static-res.qq.com
 DOMAIN-SUFFIX,stat.tpns.tencent.com
 DOMAIN,h.trace.qq.com
-DOMAIN-KEYWORD,omgmta.qq.com
-DOMAIN-KEYWORD,omgmta1.qq.com
+DOMAIN-SUFFIX,omgmta.qq.com
+DOMAIN-SUFFIX,omgmta1.qq.com
 
 #=======X=======#
 #迅雷解除版权限制
