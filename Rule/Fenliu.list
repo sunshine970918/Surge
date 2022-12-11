@@ -1,6 +1,6 @@
 // @ScriptName        surge自用分流
 // @Author            by大帅哥
-# 2022-12-09 11:58
+# 2022-12-09 11:35
 
 # ======= 0 ======= #
 # 解除安全浏览限制
@@ -19,7 +19,7 @@ DOMAIN, iqiyim.adtrack.enlightent.cn
 DOMAIN,dig.bdurl.net
 DOMAIN,ads3-normal-lq.zijieapi.com
 DOMAIN,ads5-normal-lq.zijieapi.com
-IP-CIDR, 203.107.63.154/32
+IP-CIDR, 203.107.63.154/32,no-resolve
 
 # ======= B ======= #
 # > 哔哩哔哩
@@ -42,7 +42,7 @@ DOMAIN, images.ctfassets.net
 # ======= D ======= #
 # > 叮嗒出行
 DOMAIN-KEYWORD, image.bianxianmao.com
-IP-CIDR, 203.107.1.1/24
+IP-CIDR, 203.107.1.1/24,no-resolve
 
 # ======= G ======= #
 # 高德地图 开屏广告
@@ -137,7 +137,7 @@ DOMAIN, swallowcrockerybless.com
 
 # ======= T ======= #
 # 贴吧
-IP-CIDR, 180.76.76.200/32
+IP-CIDR, 180.76.76.200/32,no-resolve
 # > 腾讯视频
 DOMAIN-SUFFIX, tetrack.qq.com
 DOMAIN-SUFFIX, tpns.tencent.com
@@ -231,8 +231,8 @@ DOMAIN, appcloud2.in.zhihu.com
 DOMAIN, mqtt.zhihu.com
 DOMAIN, sugar.zhihu.com
 USER-AGENT, AVOS*
-IP-CIDR, 118.89.204.198/32
-IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128
+IP-CIDR, 118.89.204.198/32,no-resolve
+IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 # > 真不卡
 DOMAIN-SUFFIX, ttayy.cn
 DOMAIN-SUFFIX, zhengxiaoliu.top
