@@ -144,7 +144,8 @@ myBlockAds = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/\w{32}\.(gif|jpg|png)$ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https?:\/\/render-oss-cdn\.amap\.com\/render\/studio-dev\/image\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # 京东极速版 //api.m.jd.com, img11.360buyimg.com
-^https:\/\/img11\.360buyimg\.com\/dl\/jfs\/t1\/195304\/29\/12317\/268480\/60e6fd21E02a8fb2a\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https:\/\/img11\.360buyimg\.com\/dl\/jfs\/t1\/206246\/27\/19838\/507800\/637add8bEbca1b4ed\/bd5086359c2b1e43\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https:\/\/img11\.360buyimg\.com\/dl\/jfs\/t1\/33249\/15\/17751\/383946\/638eb3caE20e11da0\/06aa6c152b9567d3\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # > 京喜 //api.m.jd.com, img14.360buyimg.com
 ^https:\/\/img14.360buyimg.com\/mcoss\/jfs\/t1\/183719\/8\/13358\/190450\/60e82bedE10b64e23\/ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
