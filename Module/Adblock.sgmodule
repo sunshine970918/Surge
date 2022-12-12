@@ -94,7 +94,7 @@
 # 优酷 //*.ott.cibntv.net
 ^https?:\/\/[\w-.]+\.ott\.cibntv\.net\/[\w\/-]+.mp4\?sid= - reject
 # 中国移动 //clientaccess.10086.cn, wap.js.10086.cn, res.app.coc.10086.cn
-^https?:\/\/res\.app\.coc\.10086\.cn\/group1\/M00\/00\/4F\/CtFOBmNghkiAadBQAANjrTboB-k282\.jpg$ - reject
+^https?:\/\/res\.app\.coc\.10086\.cn\/group1\/M00\/00\/.+ - reject
 ^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
 ^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
 # > 中国电信 //cloud.189.cn, zt-app.go189.cn
