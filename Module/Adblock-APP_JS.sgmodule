@@ -28,5 +28,8 @@ Picsew滚动截图+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itu
 #酷我音乐解锁vip
 酷我VIP = type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sunshine970918/Surge/main/Module/Panel/Kuwo/kuwo.js
 
+#PornHub Unlock Premium
+Premium = type=http-response,pattern=^https?:\/\/cn\.pornhubpremium\.com\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/sunshine970918/Surge/main/Module/Panel/Pornhub/pornhub9.js
+
 [MITM]
-hostname = %APPEND% api.coolapk.com, buy.itunes.apple.com, server1.xxxy.dayukeji.com, api.m.jd.com, -trade-acs.m.taobao.com, pan.baidu.com, appwk.baidu.com, *.kuwo.cn, *.lrts.me
+hostname = %APPEND% api.coolapk.com, buy.itunes.apple.com, server1.xxxy.dayukeji.com, api.m.jd.com, -trade-acs.m.taobao.com, pan.baidu.com, appwk.baidu.com, *.kuwo.cn, *.lrts.me, cn.pornhubpremium.com
