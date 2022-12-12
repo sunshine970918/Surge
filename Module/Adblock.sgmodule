@@ -60,7 +60,7 @@
 # 肯德基 //res.kfc.com.cn
 ^https?:\/\/res\.kfc\.com\.cn\/advertisement\/ - reject
 # 酷安 //api.coolapk.com, api-access.pangolin-sdk-toutiao.com
-^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk - reject
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/ad\/union\/api\/ - reject
 # 美团 //img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net
 ^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
