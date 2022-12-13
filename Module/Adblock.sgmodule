@@ -3,7 +3,7 @@
 #!author=大帅哥
 
 [General］
-force-http-engine-hosts= %APPEND% p3-be-pack-sign.pglstatp-toutiao.com
+force-http-engine-hosts = %APPEND% p3-be-pack-sign.pglstatp-toutiao.com
 
 [URL Rewrite]
 
