@@ -2,7 +2,7 @@
 #!desc=自用去广告
 #!author=大帅哥
 
-[General］
+[General]
 force-http-engine-hosts = %APPEND% p3-be-pack-sign.pglstatp-toutiao.com
 
 [URL Rewrite]
