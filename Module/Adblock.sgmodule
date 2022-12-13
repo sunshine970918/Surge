@@ -59,8 +59,9 @@
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
 # 肯德基 //res.kfc.com.cn
 ^https?:\/\/res\.kfc\.com\.cn\/advertisement\/ - reject
-# 酷安 //api.coolapk.com, api-access.pangolin-sdk-toutiao.com
+# 酷安 //api.coolapk.com, api-access.pangolin-sdk-toutiao.com, p3-be-pack-sign.pglstatp-toutiao.com
 ^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/ad\/union\/api\/ - reject
+^http:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ad\.union\.api\/
 # 美团 //img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net
 ^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
@@ -176,4 +177,4 @@ myBlockAds = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api
 
 [MITM]
 
-hostname = %APPEND% ad.12306.cn, vip7.fzwdyy.cn:8083, vpic.cms.qq.com, *.58cdn.com.cn, app.58.com, pic?.ajkimg.com, acs.m.taobao.com, heic.alicdn.com, pan.baidu.com, *.bdstatic.com, app-gw.csdn.net, api.douban.com, sdk.alibaba.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, *.pglstatp-toutiao.com.*, gurd.snssdk.com.*, *.pstatp.com.*, gd.10086.cn, res.app.coc.10086.cn, ssdkauth.hpplay.cn, *.amap.com, api.m.jd.com, qdserver.jd.com, img11.360buyimg.com, img14.360buyimg.com, gab.122.gov.cn, res.kfc.com.cn, api.coolapk.com, api-access.pangolin-sdk-toutiao.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net, wmapi.meituan.com, www.meituan.com, api.pinduoduo.com, api.yangkeduo.com, mpcs.suning.com, image.suning.cn, luckman.suning.com, business-cdn.shouji.sogou.com, 4gimg.map.qq.com, y.gtimg.cn, us.l.qq.com, c.tieba.baidu.com, tiebac.baidu.com, ad.12306.cn, interface.music.163.com, api.xiachufang.com, edith.xiaohongshu.com, *.ott.cibntv.net, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, cloud.189.cn, zt-app.go189.cn
+hostname = %APPEND% ad.12306.cn, vip7.fzwdyy.cn:8083, vpic.cms.qq.com, *.58cdn.com.cn, app.58.com, pic?.ajkimg.com, acs.m.taobao.com, heic.alicdn.com, pan.baidu.com, *.bdstatic.com, app-gw.csdn.net, api.douban.com, sdk.alibaba.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, *.pglstatp-toutiao.com.*, gurd.snssdk.com.*, *.pstatp.com.*, gd.10086.cn, res.app.coc.10086.cn, ssdkauth.hpplay.cn, *.amap.com, api.m.jd.com, qdserver.jd.com, img11.360buyimg.com, img14.360buyimg.com, gab.122.gov.cn, res.kfc.com.cn, api.coolapk.com, api-access.pangolin-sdk-toutiao.com, p3-be-pack-sign.pglstatp-toutiao.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net, wmapi.meituan.com, www.meituan.com, api.pinduoduo.com, api.yangkeduo.com, mpcs.suning.com, image.suning.cn, luckman.suning.com, business-cdn.shouji.sogou.com, 4gimg.map.qq.com, y.gtimg.cn, us.l.qq.com, c.tieba.baidu.com, tiebac.baidu.com, ad.12306.cn, interface.music.163.com, api.xiachufang.com, edith.xiaohongshu.com, *.ott.cibntv.net, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, cloud.189.cn, zt-app.go189.cn
