@@ -3,14 +3,23 @@
 #!author=大帅哥
 
 [URL Rewrite]
+# 屏蔽下发的配置，如皮肤等
+^https:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config - reject
+# 我的页面 - 屏蔽开通盐选会员的卡片
+^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
+# 网页版去广告 //www.zhihu.com, zhuanlan.zhihu.com
+^https:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings - reject
+^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation - reject
+^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner - reject
+^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation - reject
+
+[Map Local]
 # 拦截开屏广告
 ^https:\/\/api\.zhihu\.com\/commercial_api\/launch_v2\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https:\/\/api\.zhihu\.com\/commercial_api\/real_time_launch_v2\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # 拦截品牌提问广告
 ^https:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 ^https:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
-# 屏蔽下发的配置，如皮肤等
-^https:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config - reject
 # 去除底部标签页关注人角标
 ^https:\/\/api\.zhihu\.com\/moments\/tab_v2 data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # 去除消息通知角标
@@ -21,13 +30,6 @@
 ^https:\/\/api\.zhihu\.com\/me\/guides data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # 去除关注页最常访问
 ^https:\/\/api\.zhihu\.com\/moments\/recent data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
-# 我的页面 - 屏蔽开通盐选会员的卡片
-^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
-# 网页版去广告 //www.zhihu.com, zhuanlan.zhihu.com
-^https:\/\/www\.zhihu\.com\/api\/v4/(questions|anwsers)\/\d+/related-readings - reject
-^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation - reject
-^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner - reject
-^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation - reject
 
 [Script]
 # 拦截首页右下角悬浮框
