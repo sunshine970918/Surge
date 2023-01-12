@@ -2,11 +2,16 @@
 #!desc=bilibili去广告
 #!author=大帅哥
 
+[Rule]
+DOMAIN-SUFFIX,cm.bilibili.com,REJECT
+
 [URL Rewrite]
 # 屏蔽DefaultWord //app.bilibili.com
 ^https:\/\/app\.bilibili\.com\/bilibili\.app\.interface\.v1\.Search\/Defaultwords$ - reject
 # 屏蔽IP请求 //app.bilibili.com
 ^https:\/\/app\.bilibili\.com\/x\/resource\/ip - rejec
+
+[Map Local]
 # 拒绝地理位置请求 //api.bilibili.com
 ^https:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp=jsonp$ data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 
