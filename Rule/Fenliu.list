@@ -47,9 +47,10 @@ IP-CIDR,203.107.1.1/24,no-resolve
 #=======G=======#
 # 高德地图
 DOMAIN,amap-aos-info-nogw.amap.com
-DOMAIN,amdc.m.taobao.com
+DOMAIN-SUFFIX,amdc.m.taobao.com
 DOMAIN,awaken.amap.com
 DOMAIN,free-aos-cdn-image.amap.com
+URL-REGEX,\/amdc\/mobileDispatch
 #工商银行开屏广告
 DOMAIN,pageviewp.icbc.com.cn
 
