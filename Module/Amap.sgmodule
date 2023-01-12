@@ -2,6 +2,10 @@
 #!desc=高德地图去广告
 #!author=大帅哥
 
+DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
+#由于surge需特殊方法匹配域名下ip,因此用如下规则
+URL-REGEX,\/amdc\/mobileDispatch,REJECT
+
 [URL Rewrite]
 # 首页顶部消息横幅
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
