@@ -1,0 +1,26 @@
+#!name=高德地图
+#!desc=高德地图去广告
+#!author=大帅哥
+
+[URL Rewrite]
+# 首页顶部消息横幅
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+# 其他
+^https:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
+
+[Script]
+# 首页卡片
+amap = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page(-location)?\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+# 首页顶部消息横幅
+#^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+amap = type=http-response,pattern=^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull(3|_mp)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+# 我的页面卡片
+amap = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+# 搜索框热词
+amap = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+# 开屏广告
+amap = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+
+[MITM]
+hostname = %APPEND% m5.amap.com, sns.amap.com
