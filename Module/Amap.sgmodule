@@ -2,6 +2,7 @@
 #!desc=高德地图去广告
 #!author=大帅哥
 
+[Rule]
 DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
 #由于surge需特殊方法匹配域名下ip,因此用如下规则
 URL-REGEX,\/amdc\/mobileDispatch,REJECT
