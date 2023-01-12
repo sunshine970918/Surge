@@ -6,6 +6,8 @@
 # 去除开屏广告 //sdkapp.uve.weibo.com, wbapp.uve.weibo.com
 ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/get-lbs-cell-info\.php$ - reject
 ^https:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php\? - reject
+
+[Map Local]
 # 去除热搜提醒 //api.weibo.cn
 ^https:\/\/api\.weibo\.cn\/2\/hot\/hours_spotlight data="https://raw.githubusercontent.com/sunshine970918/Surge/main/Rule/mocks/reject-dict.json"
 # 去除侧边栏 //api.weibo.cn
