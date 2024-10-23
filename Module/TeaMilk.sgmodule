@@ -1,0 +1,15 @@
+#!name=奶茶多合一签到
+#!desc=每日定时签到，模块参数可调整签到时间。\n1.打开小程序,收录小程序任务或更新token2.手动完成一次签到,收录活动id.
+#!arguments=定时签到:17 10 * * *,禁用脚本:百度贴吧[Cookie],禁用MITM:hostname
+#!arguments-desc=定时签到：Cron表达式，默认每天早上 08:40 执行。\n\n禁用脚本：禁用获取Cookie脚本，输入 # 表示禁用。\n\n禁用MITM：禁用MITM主机名，输入 # 表示禁用。
+#!category= Sliverkiss
+
+[Script]
+奶茶多合一签到 = type=cron,cronexp="{{{定时签到}}}",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0,timeout=60
+
+{{{禁用脚本}}}奶茶获取token = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
+
+{{{禁用脚本}}}奶茶获取token = type=http-request, pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
+
+[MITM]
+{{{禁用MITM}}} = %APPEND% webapi2.qmai.cn, webapi.qmai.cn,qmwebapi.qmai.cn
