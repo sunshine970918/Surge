@@ -1,7 +1,7 @@
 #!name=奶茶多合一签到
 #!desc=每日定时签到，模块参数可调整签到时间。\n1.打开小程序,收录小程序任务或更新token2.手动完成一次签到,收录活动id.
-#!arguments=定时签到:17 10 * * *,禁用脚本:百度贴吧[Cookie],禁用MITM:hostname
-#!arguments-desc=定时签到：Cron表达式，默认每天早上 08:40 执行。\n\n禁用脚本：禁用获取Cookie脚本，输入 # 表示禁用。\n\n禁用MITM：禁用MITM主机名，输入 # 表示禁用。
+#!arguments=定时签到:17 10 * * *,禁用脚本:奶茶获取token,禁用MITM:hostname
+#!arguments-desc=定时签到：Cron表达式，默认每天早上 08:40 执行。\n\n禁用脚本：禁用获取token脚本，输入 # 表示禁用。\n\n禁用MITM：禁用MITM主机名，输入 # 表示禁用。
 #!category= Sliverkiss
 
 [Script]
