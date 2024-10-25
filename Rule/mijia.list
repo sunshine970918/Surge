@@ -1,0 +1,18 @@
+# > 米家 cn.app.chat.xiaomi.net, app.chat.xiaomi.net
+DOMAIN-SUFFIX,resolver.msg.xiaomi.net,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,app.chat.xiaomi.net,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,relay.mimc.chat.xiaomi.net,REJECT,extended-matching,pre-matching
+IP-CIDR,106.120.178.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,114.247.154.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,117.128.102.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,123.125.102.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,220.181.106.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,39.102.218.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,58.83.177.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,161.117.185.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,161.117.226.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,161.117.238.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,161.117.251.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,111.13.141.1/24,REJECT-DROP,no-resolve,pre-matching
+IP-CIDR,111.13.213.1/24,REJECT-DROP,no-resolve,pre-matching
+OR,((IP-CIDR,114.247.154.0/24,no-resolve), (IP-CIDR,220.181.106.0/24,no-resolve), (IP-CIDR,106.120.178.0/24,no-resolve)),REJECT-DROP,pre-matching
