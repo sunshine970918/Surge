@@ -1,5 +1,5 @@
 #!name=奶茶王子获取Token
-#!desc=1.打开小程序,收录小程序任务或更新token2.手动完成一次签到,收录活动id.
+#!desc=1.打开小程序,收录小程序任务或更新token\n2.手动完成一次签到,收录活动id.
 #!arguments=禁用MITM:hostname
 #!arguments-desc=禁用MITM：禁用MITM主机名，输入 # 表示禁用。
 #!category= Sliverkiss
