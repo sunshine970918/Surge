@@ -1,0 +1,24 @@
+#!name=奶茶王子获取Token
+#!desc=1.打开小程序,收录小程序任务或更新token2.手动完成一次签到,收录活动id.
+#!arguments=禁用MITM:hostname
+#!arguments-desc=禁用MITM：禁用MITM主机名，输入 # 表示禁用。
+#!category= Sliverkiss
+奈雪点单获取Token = type=http-request,pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js,script-update-interval=0
+
+奶茶获取token = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
+奶茶获取token = type=http-request, pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
+
+阿里云盘签到获取Token = type=http-response,pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js,script-update-interval=0
+
+达乐美披萨获取Token = type=http-request,pattern=^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone,requires-body=1,max-size=0,binary-body-mode=0,timeout=80,script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js,script-update-interval=0
+
+蜜雪冰城获取Token = type=http-response,pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,script-update-interval=0
+
+小蚕签到获取Token = type=http-response,pattern=^https:\/\/gw\.xiaocantech\.com\/rpc,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js,script-update-interval=0
+
+酷狗概念版获取Token = type=http-request,pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).*,requires-body=0,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js,script-update-interval=0
+
+泡泡玛特获取Token = type=http-response,pattern=^https:\/\/popvip\.paquapp\.com\/miniapp\/v2\/wechat\/getUserInfo,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js,script-update-interval=0
+
+[MITM]
+{{{禁用MITM}}} = %APPEND% tm-web.pin-dao.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, auth.alipan.com, auth.aliyundrive.com, game.dominos.com.cn, mxsa.mxbc.net, gw.xiaocantech.com, *.kugou.com, popvip.paquapp.com
