@@ -3,6 +3,7 @@
 #!arguments=禁用MITM:hostname
 #!arguments-desc=禁用MITM：禁用MITM主机名，输入 # 表示禁用。
 #!category= Sliverkiss
+[Script]
 奈雪点单获取Token = type=http-request,pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js,script-update-interval=0
 
 奶茶获取token = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
