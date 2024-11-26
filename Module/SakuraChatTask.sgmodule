@@ -3,18 +3,38 @@
 #!category= Sliverkiss
 
 [Script]
-奈雪 = type=cron,cronexp="36 10 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js,script-update-interval=0,timeout=60
+奶茶多合一 = type=cron, cronexp="20 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, timeout=120
 
-奶茶多合一签到 = type=cron,cronexp="30 10 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0,timeout=60
+阿里云盘签到 = type=cron, cronexp="20 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=120
 
-阿里云盘签到 = type=cron,cronexp="45 10 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js,script-update-interval=0,timeout=60
+达美乐披萨 = type=cron, cronexp="20 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, timeout=120
 
-达乐美比萨 = type=cron,cronexp="32 10 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js,script-update-interval=0,timeout=300
+蜜雪冰城 = type=cron, cronexp="21 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, timeout=120
 
-蜜雪冰城 = type=cron,cronexp="34 10 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,script-update-interval=0,timeout=60
+奈雪点单签到 = type=cron, cronexp="21 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, timeout=120
 
-小蚕签到 = type=cron,cronexp="38-39 10 * * *",script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js,script-update-interval=0,timeout=60
+小蚕霸王餐 = type=cron, cronexp="21-22 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, timeout=120
 
-酷狗概念版领取VIP = type=cron,cronexp="10 0 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou_auto.js,script-update-interval=0,timeout=60
+泡泡玛特签到 = type=cron, cronexp="22 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, timeout=120
 
-泡泡玛特签到 = type=cron,cronexp="31 10 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js,script-update-interval=0,timeout=60
+酷狗领取VIP = type=cron, cronexp="10 0 * * *", script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou_auto.js, timeout=120
+
+阿里云社区 = type=cron, cronexp="10 9,17 * * *", script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/aliyun_web/aliyun_web.js, timeout=120
+
+雨晨ios签到 = type=cron, cronexp="22 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/9aab5b214f3145e39639a2581e83bb27/raw/yuchenios.js, timeout=120
+
+高德地图 = type=cron, cronexp="10 10 * * *", script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=120
+
+高德抢券 = type=cron, cronexp="0 6,12,18 * * *", script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDacheCoupon.js, timeout=120
+
+杜蕾斯 = type=cron, cronexp="23 10 * * *", script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, timeout=120
+
+杰士邦安心福利社 = type=cron, cronexp="23 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, timeout=120
+
+吾爱破解签到 = type=cron, cronexp="23 10 * * *", script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js, timeout=10
+
+iios-苹果软件站 = type=cron, cronexp="24 10 * * *", script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/iios/iios.js, timeout=120
+
+IQOO = type=cron, cronexp="24 10 * * *", script-path=https://gist.githubusercontent.com/Sliverkiss/bfc5527ad3ea8ac7b0820ca442442452/raw/iqoo.js, timeout=120
+
+柠季 = type=cron, cronexp="24 10 * * *", script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/ningji/ningji.js, timeout=120
