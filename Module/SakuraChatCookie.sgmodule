@@ -4,22 +4,40 @@
 #!arguments-desc=禁用MITM：禁用MITM主机名，输入 # 表示禁用。
 #!category= Sliverkiss
 [Script]
-奈雪点单获取Token = type=http-request,pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js,script-update-interval=0
+奶茶获取token = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp), script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60
+奶茶获取token = type=http-request, pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign), script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60
 
-奶茶获取token = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
-奶茶获取token = type=http-request, pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign),requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0
+阿里云盘获取cookie = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60
 
-阿里云盘签到获取Token = type=http-response,pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js,script-update-interval=0
+达美乐披萨获取token = type=http-request, pattern=^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone, script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, requires-body=true, timeout=10
 
-达乐美披萨获取Token = type=http-request,pattern=^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone,requires-body=1,max-size=0,binary-body-mode=0,timeout=80,script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js,script-update-interval=0
+蜜雪冰城获取token = type=http-response, pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60
 
-蜜雪冰城获取Token = type=http-response,pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info,requires-body=1,max-size=0,binary-body-mode=0,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,script-update-interval=0
+奈雪点单获取token = type=http-request, pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo, script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, requires-body=true, timeout=60
 
-小蚕签到获取Token = type=http-response,pattern=^https:\/\/gw\.xiaocantech\.com\/rpc,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js,script-update-interval=0
+小蚕霸王餐 = type=http-response, pattern=^https:\/\/gw\.xiaocantech\.com\/rpc, script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, requires-body=true, timeout=60
 
-酷狗概念版获取Token = type=http-request,pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).*,requires-body=0,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js,script-update-interval=0
+泡泡玛特获取token = type=http-response, pattern=^https:\/\/popvip\.paquapp\.com\/miniapp\/v2\/wechat\/getUserInfo, script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, requires-body=true, timeout=60
 
-泡泡玛特获取Token = type=http-response,pattern=^https:\/\/popvip\.paquapp\.com\/miniapp\/v2\/wechat\/getUserInfo,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js,script-update-interval=0
+酷狗数据 = type=http-request, pattern=https://(gateway|gatewayretry|gateway3).kugou.com/youth/v1/(recharge/receive_vip_listen_song|activity/get_month_vip_record).*, script-path=https://gist.githubusercontent.com/Alex0510/1c389019c264a7d3ddbe4dbcf77d4295/raw/kugou.js, requires-body=true, timeout=60
+
+电信登录地址 = type=http-request, pattern=^https:\/\/e\.dlife\.cn\/user\/loginMiddle, script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js, requires-body=true, timeout=60
+
+联通获取Cookie = type=http-request, pattern=https:\/\/m\.client\.10010\.com\/(.*)\/smartwisdomCommon, script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js, requires-body=true, timeout=60
+
+阿里云社区获取token = type=http-response, pattern=^https?:\/\/developer\.aliyun\.com\/developer\/api\/my\/user\/getUser, script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/aliyun_web/aliyun_web.js, requires-body=true, timeout=60
+
+高德地图获取token = type=http-response, pattern=^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=), script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60
+
+杜蕾斯获取token = type=http-request, pattern=^https:\/\/vip\.ixiliu\.cn\/mp\/user\/info$, script-path=https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/dls.js, timeout=60
+
+杰士邦安心福利社获取token = type=http-response, pattern=^https:\/\/xh-vip-api\.a-touchin\.com\/mp\/user\/info, script-path=https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, requires-body=true, timeout=60
+
+52pojie = type=http-request, pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js
+
+IQOO获取token = type=http-response, pattern=^https:\/\/bbs-api\.iqoo\.com\/api\/v3\/user\?userId=, script-path=https://gist.githubusercontent.com/Sliverkiss/bfc5527ad3ea8ac7b0820ca442442452/raw/iqoo.js, requires-body=true, timeout=60
+
+柠季Token = type=http-response, pattern=^https?:\/\/pos\.meituan\.com\/api\/v1\/crm\/frontend\/campaign\/display, script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/ningji/ningji.js, requires-body=true, timeout=60
 
 [MITM]
-{{{禁用MITM}}} = %APPEND% tm-web.pin-dao.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, auth.alipan.com, auth.aliyundrive.com, game.dominos.com.cn, mxsa.mxbc.net, gw.xiaocantech.com, *.kugou.com, popvip.paquapp.com
+{{{禁用MITM}}} = %APPEND% webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, auth.alipan.com, auth.aliyundrive.com, m.hualala.com, mxsa.mxbc.net, tm-web.pin-dao.cn, gw.xiaocantech.com, popvip.paquapp.com, *.kugou.com, e.dlife.cn, m.client.10010.com, developer.aliyun.com, *.amap.com, vip.ixiliu.cn, xh-vip-api.a-touchin.com, www.52pojie.cn, h5.youzan.com, bbs-api.iqoo.com, pos.meituan.com
