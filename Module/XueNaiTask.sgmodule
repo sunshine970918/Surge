@@ -1,0 +1,36 @@
+#!name=雪乃
+#!desc=每日定时签到及活动
+
+[Script]
+七彩虹商城 = type=cron,cronexp="7 8,20 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Colorful/Colorful.js,script-update-interval=0,timeout=3600,wake-system=1
+
+三得利 = type=cron,cronexp="19 8,19 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/SDL/SDL.js,script-update-interval=0,timeout=3600,wake-system=1
+
+仰韶会员 = type=cron,cronexp="20 10,22 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YSHY/YSHY.js,script-update-interval=0,timeout=3600,wake-system=1
+
+伊利-春节 = type=cron,cronexp="5 0,18 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YiLi/YiLi.js,script-update-interval=0,timeout=3600,wake-system=1
+
+好奇车生活 = type=cron,cronexp="54 7,15 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.js,script-update-interval=0,timeout=3600,wake-system=1
+
+富士instax玩拍由我俱乐部 = type=cron,cronexp="10 10,16,22 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/INSTAX/INSTAX.js,script-update-interval=0,timeout=3600,wake-system=1
+
+富连e充 = type=cron,cronexp="10 0,23 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.js,script-update-interval=0,timeout=3600,wake-system=1
+
+攀升科技+ = type=cron,cronexp="33 2,12,20 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/PSKJ/PSKJ.js,script-update-interval=0,timeout=3600,wake-system=1
+
+日清食品体验馆 = type=cron,cronexp="25 5,15 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RQSP/RQSP.js,script-update-interval=0,timeout=3600,wake-system=1
+
+毛铺草本荟 = type=cron,cronexp="27 7,17 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MPCBH/MPCBH.js,script-update-interval=0,timeout=3600,wake-system=1
+
+泰康在线 = type=cron,cronexp="8 8,22 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.js,script-update-interval=0,timeout=3600,wake-system=1
+
+海天美味馆 = type=cron,cronexp="43 2,11,20 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.js,script-update-interval=0,timeout=3600,wake-system=1
+
+红牛会员俱乐部 = type=cron,cronexp="44 8,18 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js,script-update-interval=0,timeout=3600,wake-system=1
+
+统一 = type=cron,cronexp="25 8,12,18,20 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/TongYi.js,script-update-interval=0,timeout=3600,wake-system=1
+
+网易严选 = type=cron,cronexp="45 0,11,21 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.js,script-update-interval=0,timeout=3600,wake-system=1
+网易严选-兑换时间 = type=cron,cronexp="50 9 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX_MONITOR.js,script-update-interval=0,timeout=3600,wake-system=1
+
+麦斯威尔福利社 = type=cron,cronexp="11 11,18 * * *",script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MSWEFLS/MSWEFLS.js,script-update-interval=0,timeout=3600,wake-system=1
